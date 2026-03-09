@@ -14,7 +14,7 @@ function BookTicket() {
       const token = localStorage.getItem("accessToken");
 
       const res = await axios.get(
-        "http://127.0.0.1:8000/api/metro/stations/",
+        "https://metro-ticket-booking-system.onrender.com/api/metro/stations/",
         {
           headers: { Authorization: `Bearer ${token}` },
         }

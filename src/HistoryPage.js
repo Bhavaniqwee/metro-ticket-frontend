@@ -11,7 +11,7 @@ function HistoryPage() {
       const token = localStorage.getItem("accessToken");
 
       const res = await axios.get(
-        "http://127.0.0.1:8000/api/tickets/history/",
+        "https://metro-ticket-booking-system.onrender.com/history/",
         { headers: { Authorization: `Bearer ${token}` } }
       );
 
@@ -49,7 +49,7 @@ function HistoryPage() {
               <div key={t.ticket_id} style={{ marginBottom: "12px" }}>
                 <p><b>{t.type} #{t.ticket_id}</b> — {t.status}</p>
                 <img
-                  src={`http://127.0.0.1:8000${t.qr}`}
+                  src={`https://metro-ticket-booking-system.onrender.com/${t.qr}`}
                   width="150"
                   style={{ opacity: t.status === "CANCELLED" ? 0.4 : 1 }}
                 />

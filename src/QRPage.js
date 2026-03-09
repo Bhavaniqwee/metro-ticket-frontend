@@ -21,7 +21,7 @@ function QRPage() {
       const token = localStorage.getItem("accessToken");
 
       await axios.post(
-        `http://127.0.0.1:8000/api/tickets/cancel/${id}/`,
+        `https://metro-ticket-booking-system.onrender.com/api/tickets/cancel/${id}/`,
         {},
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -55,7 +55,7 @@ function QRPage() {
             </p>
 
             <img
-              src={`http://127.0.0.1:8000${t.qr}`}
+              src={`https://metro-ticket-booking-system.onrender.com/${t.qr}`}
               width="220"
               style={{
                 borderRadius: "15px",

@@ -17,7 +17,7 @@ function PaymentSuccessPage() {
         const token = localStorage.getItem("accessToken");
 
         const res = await axios.post(
-          "http://127.0.0.1:8000/api/tickets/book/",
+          "https://metro-ticket-booking-system.onrender.com//api/tickets/book/",
           {
             source_id: state.sourceId,
             destination_id: state.destinationId,

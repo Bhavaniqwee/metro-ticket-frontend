@@ -17,7 +17,7 @@ function Register() {
     }
 
     try {
-      const res = await axios.post("http://127.0.0.1:8000/api/users/register/", {
+      const res = await axios.post("https://metro-ticket-booking-system.onrender.com////api/users/register/", {
         username,
         email,
         password,
