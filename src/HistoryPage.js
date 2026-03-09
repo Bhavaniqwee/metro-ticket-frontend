@@ -50,6 +50,7 @@ function HistoryPage() {
                 <p><b>{t.type} #{t.ticket_id}</b> — {t.status}</p>
                 <img
                   src={`https://metro-ticket-booking-system.onrender.com/${t.qr}`}
+                  alt="QR Code"
                   width="150"
                   style={{ opacity: t.status === "CANCELLED" ? 0.4 : 1 }}
                 />
