@@ -12,7 +12,7 @@ function Login() {
   const login = async () => {
     try {
       const res = await axios.post(
-        "https://metro-ticket-booking-system.onrender.com//api/users/login/",
+        "https://metro-ticket-booking-system.onrender.com/api/users/login/",
         { username, password }
       );
 
