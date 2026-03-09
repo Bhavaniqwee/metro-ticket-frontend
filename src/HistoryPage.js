@@ -11,7 +11,7 @@ function HistoryPage() {
       const token = localStorage.getItem("accessToken");
 
       const res = await axios.get(
-        "https://metro-ticket-booking-system.onrender.com/history/",
+        "https://metro-ticket-booking-system.onrender.com/api/tickets/history/",
         { headers: { Authorization: `Bearer ${token}` } }
       );
 
